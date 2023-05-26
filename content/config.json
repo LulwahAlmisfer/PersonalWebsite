@@ -1,5 +1,5 @@
 {
-  "title": "Blog by John Doe",
+  "title": "Lulwah Almisfer",
   "url": "https://lumen.alxshelepenok.com",
   "subtitle": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
   "copyright": "© All rights reserved.",
@@ -15,24 +15,20 @@
     {
       "label": "About me",
       "path": "/pages/about"
-    },
-    {
-      "label": "Contact me",
-      "path": "/pages/contacts"
     }
   ],
   "author": {
-    "name": "John Doe",
+    "name": "Lulwah Almisfer",
     "photo": "/photo.jpg",
-    "bio": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+    "bio": "IOS",
     "contacts": {
       "rss": "",
-      "email": "",
-      "github": "#",
+      "email": "Lulukalmisfer@hotmail.com",
+      "github": "LulwahAlmisfer",
       "facebook": "#",
       "telegram": "#",
-      "twitter": "#",
-      "linkedin": "#",
+      "twitter": "Lulukalmisfer",
+      "linkedin": "lulwahalmisfer",
       "instagram": "#",
       "mastodon": "#",
       "line": "",

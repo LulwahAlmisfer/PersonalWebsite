@@ -1,80 +1,86 @@
 ---
-title: Humane Typography in the Digital Age
-date: "2017-08-19T22:40:32.169Z"
+title: Bearer Auth and Basic Auth Vapor 4
+date: "2023-01-01T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "/posts/humane-typography-in-the-digital-age"
-category: "Typography"
+slug: "/posts/Bearer-Auth-and-Basic-Auth-Vapor-4"
+category: "Backend"
 tags:
-  - "Design"
-  - "Typography"
-  - "Web Development"
-description: "An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts."
-socialImage: "./media/42-line-bible.jpg"
+  - "Vapor"
+  - "server side swift"
+description: "Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware."
 ---
 
-- [The first transition](#the-first-transition)
-- [The digital age](#the-digital-age)
-- [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
-- [Chasing perfection](#chasing-perfection)
-
-An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts.
-
-The typography of this industrial age was no longer handcrafted. Mass production and profit became more important. Quantity mattered more than the quality. The books and printed works in general lost a part of its humanity. The typefaces were not produced by craftsmen anymore. It was the machines printing and tying the books together now. The craftsmen had to let go of their craft and became a cog in the process. An extension of the industrial machine.
-
-But the victory of the industrialism didn’t mean that the craftsmen were completely extinct. The two worlds continued to coexist independently. Each recognising the good in the other — the power of industrialism and the humanity of craftsmanship. This was the second transition that would strip typography of a part of its humanity. We have to go 500 years back in time to meet the first one.
-
-## The first transition
-
-A similar conflict emerged after the invention of the first printing press in Europe. Johannes Gutenberg invented movable type and used it to produce different compositions. His workshop could print up to 240 impressions per hour. Until then, the books were being copied by hand. All the books were handwritten and decorated with hand drawn ornaments and figures. A process of copying a book was long but each book, even a copy, was a work of art.
-
-The first printed books were, at first, perceived as inferior to the handwritten ones. They were smaller and cheaper to produce. Movable type provided the printers with flexibility that allowed them to print books in languages other than Latin. Gill describes the transition to industrialism as something that people needed and wanted. Something similar happened after the first printed books emerged. People wanted books in a language they understood and they wanted books they could take with them. They were hungry for knowledge and printed books satisfied this hunger.
-
-![42-line-bible.jpg](/media/42-line-bible.jpg)
-
-_The 42–Line Bible, printed by Gutenberg._
-
-But, through this transition, the book lost a large part of its humanity. The machine took over most of the process but craftsmanship was still a part of it. The typefaces were cut manually by the first punch cutters. The paper was made by hand. The illustrations and ornaments were still being hand drawn. These were the remains of the craftsmanship that went almost extinct in the times of Eric Gill.
-
-## The digital age
-
-The first transition took away a large part of humanity from written communication. Industrialisation, the second transition described by Eric Gill, took away most of what was left. But it’s the third transition that stripped it naked. Typefaces are faceless these days. They’re just fonts on our computers. Hardly anyone knows their stories. Hardly anyone cares. Flicking through thousands of typefaces and finding the “right one” is a matter of minutes.
-
-> In the new computer age the proliferation of typefaces and type manipulations represents a new level of visual pollution threatening our culture. Out of thousands of typefaces, all we need are a few basic ones, and trash the rest.
->
-> — Massimo Vignelli
-
-Typography is not about typefaces. It’s not about what looks best, it’s about what feels right. What communicates the message best. Typography, in its essence, is about the message. “Typographical design should perform optically what the speaker creates through voice and gesture of his thoughts.”, as El Lissitzky, a famous Russian typographer, put it.
-
-## Loss of humanity through transitions
-
-Each transition took away a part of humanity from written language. Handwritten books being the most humane form and the digital typefaces being the least. Overuse of Helvetica is a good example. Messages are being told in a typeface just because it’s a safe option. It’s always there. Everyone knows it but yet, nobody knows it. Stop someone on the street and ask him what Helvetica is? Ask a designer the same question. Ask him where it came from, when, why and who designed it. Most of them will fail to answer these questions. Most of them used it in their precious projects but they still don’t spot it in the street.
-
-<figure>
-	<blockquote>
-		<p>Knowledge of the quality of a typeface is of the greatest importance for the functional, aesthetic and psychological effect.</p>
-		<footer>
-			<cite>— Josef Mueller-Brockmann</cite>
-		</footer>
-	</blockquote>
+<figure style="width: 600px">
+<img src="/media/vaporPic.jpeg" alt="Early Printing Press">
+	<figcaption>Early wooden printing press as depicted in 1568.</figcaption>
+	
 </figure>
 
-Typefaces don’t look handmade these days. And that’s all right. They don’t have to. Industrialism took that away from them and we’re fine with it. We’ve traded that part of humanity for a process that produces more books that are easier to read. That can’t be bad. And it isn’t.
+Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware.
 
-> Humane typography will often be comparatively rough and even uncouth; but while a certain uncouthness does not seriously matter in humane works, uncouthness has no excuse whatever in the productions of the machine.
->
-> — Eric Gill
+This article will complete on Mikaela Caron’s tutorial (songs API), It is the best resource to start learning Vapor, But if you have some prior knowledge, you can keep reading.
 
-We’ve come close to “perfection” in the last five centuries. The letters are crisp and without rough edges. We print our compositions with high–precision printers on a high quality, machine made paper.
+You can find the songs API source code on Github ![here](https://github.com/codewithchris/YT-Vapor-API/tree/lesson-6) : 
 
-![type-through-time.jpg](/media/type-through-time.jpg)
+The project structure:
 
-_Type through 5 centuries._
+![strc](/media/strc.jpg)
 
-We lost a part of ourselves because of this chase after perfection. We forgot about the craftsmanship along the way. And the worst part is that we don’t care. The transition to the digital age made that clear. We choose typefaces like clueless zombies. There’s no meaning in our work. Type sizes, leading, margins… It’s all just a few clicks or lines of code. The message isn’t important anymore. There’s no more “why” behind the “what”.
+<H1>  Difference between authentication and Authorization </H1>
+Authentication is the process of verifying you are who you are.
 
-## Chasing perfection
+Authorization is the process of verifying what you have access to.
 
-Human beings aren’t perfect. Perfection is something that will always elude us. There will always be a small part of humanity in everything we do. No matter how small that part, we should make sure that it transcends the limits of the medium. We have to think about the message first. What typeface should we use and why? Does the typeface match the message and what we want to communicate with it? What will be the leading and why? Will there be more typefaces in our design? On what ground will they be combined? What makes our design unique and why? This is the part of humanity that is left in typography. It might be the last part. Are we really going to give it up?
+<H1>Basic Auth</H1>
+Basic auth is probably the simplest model of Authentication for APIs. To authenticate using basic auth, you should send a set of username & password to the API. To send the username & password, you should add the Authorization header to your request. The Authorization header must start with Basic .
 
-_Originally published by [Matej Latin](http://matejlatin.co.uk/) on [Medium](https://medium.com/design-notes/humane-typography-in-the-digital-age-9bd5c16199bd?ref=webdesignernews.com#.lygo82z0x)._
+<H1>Bearer authentication</H1>
+Bearer authentication sends a token in the Authorization header. The token is prefixed with "Bearer ".
+
+Bearer authentication is commonly used for authentication of API endpoints. The user typically requests a Bearer token by sending credentials like a username and password to a login endpoint. This token may last minutes or days depending on the application’s needs.
+
+Yes it is possible to only depend in basic auth and ask for user credentials in each request, but its inconvenience and unsafe because it creates an opportunity for hackers to intercept and exploit this information. In the other hand token based authentication provides an extra layer of security to protect user’s data. Tokens have a very short lifespan and are generated for each login session to ensure that user credentials are not exposed during data transfer. Additionally, tokens can be easily revoked, in case of a data breach.
+
+<H1>How to implement basic auth and Bearer auth in Vapor?</H1>
+First we will start with Basic Auth, you will send your username and password in the body to the API to create an account. Then for the Bearer Authentication, you will first authenticate using a username/password (Basic Auth)in the login route to get a token and then use the token to authorize your requests.
+
+I believe the majority of it should be fairly self-explanatory.
+
+1-Add User Model:
+<script src="https://gist.github.com/LulwahAlmisfer/33e04d0923c8e1c474ddda14ead7f154.js"></script>
+2- Add Token Model:
+<script src="https://gist.github.com/LulwahAlmisfer/2fdc55b2a2fc12e832525a5704e92dca.js"></script>
+3- Modify the Song Model:
+<script src="https://gist.github.com/LulwahAlmisfer/48381698de4e39b5d3b05529e7807c69.js"></script>
+4- Add User and Token Migrations and modify CreateSongs Migration
+<script src="https://gist.github.com/LulwahAlmisfer/66abf844b9da8d6ca247e4007e3c1843.js"></script>
+5- then add the migrations in the configure file, make sure to add the user before the songs since the songs depend on the user table.
+
+6- Create UsersController
+<script
+ src="https://gist.github.com/LulwahAlmisfer/be234e43026cb32d997fa4f42d31d7ca.js"></script>
+then register the UsersController in the routes file.
+
+7- Modify SongController
+
+For create and index functions, we used to let index return all the songs without knowing who added them, same way in create we add the song without associating it to a user. This is how we are going to change them:
+
+<script
+ src="https://gist.github.com/LulwahAlmisfer/2d2f90da43b5d67b35d7aafd09747977.js">
+ </script>
+
+
+Before running the app, you need to reset the database because we changed the song table.
+
+remove the existing database in docker:
+docker rm -f yourcontainername 
+and start it again:
+docker run --name yourcontainername -e POSTGRES_DB=vapor_database \
+  -e POSTGRES_USER=vapor_username -e POSTGRES_PASSWORD=vapor_password \
+  -p 5432:5432 -d postgres
+
+  <H1> Conclusion </H1> 
+choosing the appropriate authentication mechanism depends on the specific context and security requirements of the system. If the authentication situation for an application is not as security demanding, and the developers want a simple authentication standard, then they can still make use of basic authentication.
+
+Thank you so much for reading my article 💖! Please let me know if you have any suggestions or changes! I would love hearing from you.

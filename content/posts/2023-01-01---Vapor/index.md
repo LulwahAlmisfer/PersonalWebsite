@@ -55,29 +55,36 @@ First we will start with Basic Auth, you will send your username and password in
 I believe the majority of it should be fairly self-explanatory.
 
 1-Add User Model:
-<script src="https://gist.github.com/LulwahAlmisfer/33e04d0923c8e1c474ddda14ead7f154.js"></script>
+ <a href="https://gist.github.com/LulwahAlmisfer/33e04d0923c8e1c474ddda14ead7f154">gist</a>
+
 2- Add Token Model:
-<script src="https://gist.github.com/LulwahAlmisfer/2fdc55b2a2fc12e832525a5704e92dca.js"></script>
+ <a href="https://gist.github.com/LulwahAlmisfer/2fdc55b2a2fc12e832525a5704e92dca">gist</a>
+
 3- Modify the Song Model:
-<script src="https://gist.github.com/LulwahAlmisfer/48381698de4e39b5d3b05529e7807c69.js"></script>
+ <a href="https://gist.github.com/LulwahAlmisfer/48381698de4e39b5d3b05529e7807c69">gist</a>
+
 4- Add User and Token Migrations and modify CreateSongs Migration
-<script src="https://gist.github.com/LulwahAlmisfer/66abf844b9da8d6ca247e4007e3c1843.js"></script>
+ <a href="https://gist.github.com/LulwahAlmisfer/66abf844b9da8d6ca247e4007e3c1843">gist</a>
+
 5- then add the migrations in the configure file, make sure to add the user before the songs since the songs depend on the user table.
 
 6- Create UsersController
-<script src="https://gist.github.com/LulwahAlmisfer/be234e43026cb32d997fa4f42d31d7ca.js"></script>
+ <a href="https://gist.github.com/LulwahAlmisfer/be234e43026cb32d997fa4f42d31d7ca">gist</a>
+
 then register the UsersController in the routes file.
 
 7- Modify SongController
 
 For create and index functions, we used to let index return all the songs without knowing who added them, same way in create we add the song without associating it to a user. This is how we are going to change them:
 
-<script src="https://gist.github.com/LulwahAlmisfer/2d2f90da43b5d67b35d7aafd09747977.js"></script>
+ <a href="https://gist.github.com/LulwahAlmisfer/2d2f90da43b5d67b35d7aafd09747977">gist</a>
+ 
 
 Before running the app, you need to reset the database because we changed the song table.
 
 remove the existing database in docker:
 docker rm -f yourcontainername 
+
 and start it again:
 docker run --name yourcontainername -e POSTGRES_DB=vapor_database \
   -e POSTGRES_USER=vapor_username -e POSTGRES_PASSWORD=vapor_password \

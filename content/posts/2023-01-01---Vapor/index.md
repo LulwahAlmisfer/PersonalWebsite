@@ -11,7 +11,10 @@ tags:
 description: "Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware."
 ---
 
-![vapor](/media/vaporPic.jpg)
+<figure>
+<img src="/media/vaporPic.jpeg" alt="Trulli" width="500" height="333">
+
+</figure>
 
 Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware.
 
@@ -20,8 +23,11 @@ This article will complete on Mikaela Caron’s tutorial (songs API), It is the 
 You can find the songs API source code on Github ![here](https://github.com/codewithchris/YT-Vapor-API/tree/lesson-6) : 
 
 The project structure:
+<figure>
+<img src="/media/strc.jpeg" alt="Trulli" width="500" height="333">
 
-![strc](/media/strc.jpg)
+</figure>
+
 
 <H1>  Difference between authentication and Authorization </H1>
 Authentication is the process of verifying you are who you are.

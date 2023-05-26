@@ -11,11 +11,7 @@ tags:
 description: "Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware."
 ---
 
-<figure style="width: 600px">
-<img src="/media/vaporPic.jpeg" alt="Early Printing Press">
-	<figcaption>Early wooden printing press as depicted in 1568.</figcaption>
-	
-</figure>
+![vapor](/media/vaporPic.jpg)
 
 Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware.
 
@@ -58,18 +54,14 @@ I believe the majority of it should be fairly self-explanatory.
 5- then add the migrations in the configure file, make sure to add the user before the songs since the songs depend on the user table.
 
 6- Create UsersController
-<script
- src="https://gist.github.com/LulwahAlmisfer/be234e43026cb32d997fa4f42d31d7ca.js"></script>
+<script src="https://gist.github.com/LulwahAlmisfer/be234e43026cb32d997fa4f42d31d7ca.js"></script>
 then register the UsersController in the routes file.
 
 7- Modify SongController
 
 For create and index functions, we used to let index return all the songs without knowing who added them, same way in create we add the song without associating it to a user. This is how we are going to change them:
 
-<script
- src="https://gist.github.com/LulwahAlmisfer/2d2f90da43b5d67b35d7aafd09747977.js">
- </script>
-
+<script src="https://gist.github.com/LulwahAlmisfer/2d2f90da43b5d67b35d7aafd09747977.js"></script>
 
 Before running the app, you need to reset the database because we changed the song table.
 

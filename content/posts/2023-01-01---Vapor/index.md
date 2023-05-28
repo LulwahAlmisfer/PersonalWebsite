@@ -10,6 +10,8 @@ tags:
   - "server side swift"
 description: "Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware."
 ---
+<meta name="twitter:image content=https://miro.medium.com/v2/resize:fit:1400/format:webp/1*SqhuN81XJ2HFK0pn3PZAyA.png"
+/> 
 
 <figure>
 <img src="/media/vaporPic.jpeg" alt="Trulli" width="500" height="333">

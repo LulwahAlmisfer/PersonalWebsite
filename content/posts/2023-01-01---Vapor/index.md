@@ -83,13 +83,32 @@ For create and index functions, we used to let index return all the songs withou
 Before running the app, you need to reset the database because we changed the song table.
 
 remove the existing database in docker:
+
+```css
 docker rm -f yourcontainername 
+```
 
 and start it again:
+
+```css
 docker run --name yourcontainername -e POSTGRES_DB=vapor_database \
   -e POSTGRES_USER=vapor_username -e POSTGRES_PASSWORD=vapor_password \
   -p 5432:5432 -d postgres
+```
 
+ <H1> Test with Postman:</H1> 
+<figure>
+<img src="/media/1.jpeg" alt="Trulli" width="100" height="200">
+</figure>
+<figure>
+<img src="/media/2.webp" alt="Trulli" width="300" height="333">
+ the value in the response is the Token, now use it in the authorization header and choose Bearer Token in the rest of /songs route.
+</figure>
+
+<figure>
+<img src="/media/3.webp" alt="Trulli" width="300" height="333">
+
+</figure>
   <H1> Conclusion </H1> 
   
 choosing the appropriate authentication mechanism depends on the specific context and security requirements of the system. If the authentication situation for an application is not as security demanding, and the developers want a simple authentication standard, then they can still make use of basic authentication.

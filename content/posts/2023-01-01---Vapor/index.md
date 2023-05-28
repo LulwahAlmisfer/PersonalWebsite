@@ -18,7 +18,7 @@ description: "Bearer authentication and Basic authentication are two common type
 
 Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware.
 
-This article will complete on Mikaela Caron’s tutorial (songs API), It is the best resource to start learning Vapor, But if you have some prior knowledge, you can keep reading.
+This article will complete on Mikaela Caron’s tutorial <a href="https://www.youtube.com/watch?v=CD283bLteP0&list=PLMRqhzcHGw1Z7xNnqS_yUNm1k9dvq-HbM">(songs API)</a> , It is the best resource to start learning Vapor, But if you have some prior knowledge, you can keep reading.
 
 You can find the songs API source code on Github
 <a href="https://github.com/codewithchris/YT-Vapor-API/tree/lesson-6">here</a>: 

@@ -60,30 +60,252 @@ First we will start with Basic Auth, you will send your username and password in
 I believe the majority of it should be fairly self-explanatory.
 
 1-Add User Model:
- <a href="https://gist.github.com/LulwahAlmisfer/33e04d0923c8e1c474ddda14ead7f154">gist</a>
+```css
+import Fluent
+import Vapor
+
+final class User: Model {  
+    static let schema = "users"
+    
+    @ID
+    var id: UUID?
+    
+    @Field(key: "username")
+    var username: String
+    
+    @Field(key: "password")
+    var password: String
+    
+    
+    @Children(for: \.$user)
+    var songs: [Song]
+    
+    init(){
+    } 
+    init(id: UUID? = nil, email: String, password: String) {
+        self.id = id
+        self.username = email
+        self.password = password
+    }
+   
+    struct Public: Content {
+        var id: UUID?
+        var username: String
+    }    
+}
+extension User: Content {}
+
+extension User {
+    func convertToPublic() -> User.Public {
+        User.Public(id: self.id, username: self.username)
+    }
+}
+
+extension User: ModelAuthenticatable {
+    static let usernameKey = \User.$username
+    static let passwordHashKey = \User.$password
+    
+    func verify(password: String) throws -> Bool {
+        try Bcrypt.verify(password, created: self.password)
+    }
+}
+```
 
 2- Add Token Model:
- <a href="https://gist.github.com/LulwahAlmisfer/2fdc55b2a2fc12e832525a5704e92dca">gist</a>
+```css
+
+import Vapor
+import Fluent
+final class Token: Model, Content {  
+    static let schema = "tokens"
+    
+    @ID
+    var id: UUID?
+    
+    @Field(key: "value")
+    var value: String
+       
+    @Parent(key: "userID")
+    var user: User
+       
+    init() {}
+    
+    init(id: UUID? = nil, value: String, userID: User.IDValue){
+        self.id = id
+        self.value = value
+        self.$user.id = userID
+    }   
+}
+extension Token {
+    static func generate(for user: User) throws -> Token {
+        let random = [UInt8].random(count: 16).base64
+        return try Token(value: random, userID: user.requireID())
+    }
+}
+extension Token: ModelTokenAuthenticatable {
+    typealias User = App.User 
+    static let valueKey = \Token.$value
+    static let userKey = \Token.$user
+    
+    //you caan check expiry dates in here, for this example its always true
+    var isValid: Bool {
+        true
+    } 
+}
+```
 
 3- Modify the Song Model:
- <a href="https://gist.github.com/LulwahAlmisfer/48381698de4e39b5d3b05529e7807c69">gist</a>
+ ```css
+// add the userID column
+    @Parent(key: "userID")
+    var user: User
 
+ //modify the constructor 
+  init(id: UUID? = nil, title: String ,userID: User.IDValue) {
+        self.id = id
+        self.title = title
+        self.$user.id = userID. }
+```
 4- Add User and Token Migrations and modify CreateSongs Migration
- <a href="https://gist.github.com/LulwahAlmisfer/66abf844b9da8d6ca247e4007e3c1843">gist</a>
+ ```css
+
+import Fluent
+
+struct CreateUser: AsyncMigration {
+    func prepare(on database: Database)  async throws {
+        try await   database.schema("users")
+            .id()
+            .field("username", .string ,.required)
+            .field("password", .string ,.required)
+            .create()
+    }
+    
+    func revert(on database: Database) async throws {
+        try await   database.schema("user").delete()
+    }
+}
+struct CreateToken: AsyncMigration {
+    
+    
+    func prepare(on database: Database)  async throws {
+        try await    database.schema("tokens")
+            .id()
+            .field("value", .string, .required)
+            .field("userID", .uuid, .required, .references("users", "id", onDelete: .cascade)).create()
+    }
+    
+    
+    func revert(on database: Database)  async throws {
+        try await   database.schema("tokens").delete()
+    }
+}
+// after modifications 
+struct CreateSongs : AsyncMigration  {
+    
+    func prepare(on database: Database) async throws {
+        try await database.schema("songs")
+            .id()
+            .field("title", .string, .required)
+            .field("userID", .uuid, .required, .references("users", "id"))
+            .create()
+    }
+    
+    func revert(on database: Database) async throws {
+        try await database.schema("songs").delete()
+    }
+}
+```
 
 5- then add the migrations in the configure file, make sure to add the user before the songs since the songs depend on the user table.
 
 6- Create UsersController
- <a href="https://gist.github.com/LulwahAlmisfer/be234e43026cb32d997fa4f42d31d7ca">gist</a>
+```css
+import Foundation
+import Vapor
+struct UsersController: RouteCollection {
 
+    func boot(routes: RoutesBuilder) throws {
+        let usersRoutes = routes.grouped("api", "users")
+        
+        usersRoutes.post( use: creatHandler)
+
+        // here you are protecting the login route
+        //  only authenticated users can acsess it 
+        let basicAuthMiddleware = User.authenticator()
+        let basicAuthGroup = usersRoutes.grouped(basicAuthMiddleware)
+        basicAuthGroup.post("login", use: loginHandler)
+
+
+    }
+    // sign up
+    func creatHandler(_ req: Request) throws -> EventLoopFuture<User.Public> {
+        // acsess the user username and password
+        let user = try req.content.decode(User.self)
+        // hashing the password with Bcrypt algorthim before saving
+        user.password = try Bcrypt.hash(user.password)
+        return user.save(on: req.db).map {
+          // convert to public to hide the password and return the data in the response 
+            user.convertToPublic()
+        }
+    }
+
+    // log in
+    func loginHandler(_ req: Request) throws -> EventLoopFuture<Token> {
+        // acsess the user username and password
+        let user = try req.auth.require(User.self)
+        // generate the token and return it in the resposne 
+        let token = try Token.generate(for: user)
+        return token.save(on: req.db).map {token}
+    }
+}
+```
 then register the UsersController in the routes file.
 
 7- Modify SongController
 
 For create and index functions, we used to let index return all the songs without knowing who added them, same way in create we add the song without associating it to a user. This is how we are going to change them:
 
- <a href="https://gist.github.com/LulwahAlmisfer/2d2f90da43b5d67b35d7aafd09747977">gist</a>
- 
+```css
+import Fluent
+import Vapor
+
+struct SongController: RouteCollection {
+    func boot(routes: RoutesBuilder) throws {
+        let songs = routes.grouped("songs")
+       // add tokenAuthMiddleware 
+        let tokenAuthMiddleware = Token.authenticator()
+        let guardAuthMiddleware = User.guardMiddleware()
+        let tokenAuthGroup =  songs.grouped(tokenAuthMiddleware, guardAuthMiddleware)
+        
+        //all the routes now requires a token to acsess 
+        tokenAuthGroup.get(use: index)
+        tokenAuthGroup.post(use: create)
+       
+    }
+      
+    // GET Request /get songs for user route
+    func index(req: Request) async throws -> [Song] {
+       //acsess user data
+        let user = try req.auth.require(User.self)
+        let userID = try user.requireID()
+        //filter the database to return only user songs
+     return  try await Song.query(on: req.db) .filter(\.$user.$id == userID).all()
+    }
+    // POST Request /add songs route
+    func create(req: Request) async throws -> HTTPStatus {
+        let user = try req.auth.require(User.self)
+        let data = try req.content.decode(CreateSongData.self)
+        // Creating a song to s spicefic user
+        let song = try Song(title: data.title, userID: user.requireID())
+        try await song.save(on: req.db)
+        return .noContent
+    }
+}
+// used to acsess only the song title from the body 
+struct CreateSongData: Content {
+    let title: String
+}
+```
 
 Before running the app, you need to reset the database because we changed the song table.
 

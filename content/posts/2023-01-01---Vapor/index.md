@@ -11,7 +11,7 @@ tags:
 description: "Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware."
 ---
 
-<meta name="twitter:image" content="https://miro.medium.com/v2/resize:fill:224:224/1*SqhuN81XJ2HFK0pn3PZAyA.png"/> 
+<meta name="twitter:image" content="https://lulwah.dev/static/61ccf272831be1f9dd520a9b5d70a45e/af3f0/vaporPic.webp"/> 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bearer Auth and Basic Auth Vapor 4">
 <meta name="twitter:description" content="Bearer authentication and Basic authentication are two common types of authentication mechanisms. In Vapor 4, these authentication mechanisms can be easily implemented using the built-in authentication middleware.">

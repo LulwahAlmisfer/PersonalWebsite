@@ -6,8 +6,4 @@ template: "page"
 
 
 
-<object data="http://lulwah.dev/41e12f9260ccda856a45a11c59ea79ba/LulwahCV.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="LulwahCV.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="LulwahCV.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+<iframe src="https://drive.google.com/file/d/1T7lHUSpTAOiB3rxwrx5eCwB7_z8ZO0R1/preview" width="640" height="480" allow="autoplay"></iframe>

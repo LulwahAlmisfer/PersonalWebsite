@@ -15,7 +15,12 @@
     {
       "label": "About me",
       "path": "/pages/about"
+    },
+    {
+      "label": "Resume",
+      "path": "/Resume"
     }
+  
   ],
   "author": {
     "name": "Lulwah Almisfer",

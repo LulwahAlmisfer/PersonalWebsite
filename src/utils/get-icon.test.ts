@@ -12,6 +12,6 @@ describe("getIcon", () => {
     expect(getIcon("medium")).toEqual(ICONS.medium);
 
     expect(getIcon("linkedin")).toEqual(ICONS.linkedin);
- 
+    expect(getIcon("appstore")).toEqual(ICONS.appstore);
   });
 });

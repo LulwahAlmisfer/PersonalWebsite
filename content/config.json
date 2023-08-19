@@ -25,7 +25,7 @@
   "author": {
     "name": "Lulwah Almisfer",
     "photo": "/photo.jpg",
-    "bio": "IOS Developer, interested in backend",
+    "bio": "iOS Developer, interested in backend",
     "contacts": {
       "rss": "",
       "email": "Lulukalmisfer@hotmail.com",
@@ -42,7 +42,8 @@
       "medium": "@Lulukalmisfer",
       "youtube": "",
       "codepen": "",
-      "soundcloud": ""
+      "soundcloud": "",
+      "appstore": "lulwah-almisfer/id1579859640"
     }
   }
 }

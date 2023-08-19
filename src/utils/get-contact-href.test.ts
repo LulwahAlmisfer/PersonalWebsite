@@ -5,7 +5,7 @@ describe("getContactHref", () => {
     expect(getContactHref("medium", "#")).toBe("https://medium.com/#");
     expect(getContactHref("github", "#")).toBe("https://github.com/#");
     expect(getContactHref("twitter", "#")).toBe("https://www.twitter.com/#");
-
+    expect(getContactHref("appstore", "#")).toBe("https://apps.apple.com/developer/#");
 
     expect(getContactHref("linkedin", "#")).toBe(
       "https://www.linkedin.com/in/#",

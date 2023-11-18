@@ -20,6 +20,7 @@ description: "Im sure you often find yourself drowning in a sea of open browser 
 <img src="/media/2.png" alt="Trulli" width="500" height="333">
 </figure>
 
+Let's dive in and discover how these tools can transform the way you interact with your Mac, making tasks easier, more organized, and even a bit magical.
 
 ## Arc: A Chromium-Based Web Browser 
 

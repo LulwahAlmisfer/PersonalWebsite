@@ -11,6 +11,7 @@ description: "Im sure you often find yourself drowning in a sea of open browser 
 ---
 
 <meta name="twitter:image" content="/media/2.png"/> 
+<meta property="og:url" content="/media/2.png"/> 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Useful Mac Tools">
 <meta name="twitter:description" content="Im sure you often find yourself drowning in a sea of open browser tabs, each representing a different task or topic you're working on">

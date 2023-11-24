@@ -11,7 +11,7 @@ description: "Im sure you often find yourself drowning in a sea of open browser 
 ---
 
 <meta name="twitter:image" content="/media/2.png"/> 
-<meta property="og:url" content="https://pbs.twimg.com/profile_images/1319410808925741056/weExhTBA_400x400.jpg"/> 
+<meta property="og:url" content="https://repository-images.githubusercontent.com/299482335/73b47831-7f71-40e1-8b61-40eaa4555bb0"/> 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Useful Mac Tools">
 <meta name="twitter:description" content="Im sure you often find yourself drowning in a sea of open browser tabs, each representing a different task or topic you're working on">
@@ -46,7 +46,7 @@ This is one of the best tools I discovered recently, [Fig](https://fig.io/)  is 
 
 <img src="https://ohmyz.sh/img/themes/omz-robbyrussell.png" alt="Trulli" width="650" height="400">
 
-[Oh My Zsh](https://ohmyz.sh/) is a terminal looks boring so lets say its a beauty tool + it will displays your current branch in a nice way.
+[Oh My Zsh](https://ohmyz.sh/) The terminal looks boring so lets say its a beauty tool + it will displays your current branch in a nice way.
 
 ## Orbstack: Container Management
 

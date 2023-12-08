@@ -10,8 +10,8 @@ tags:
 description: "Im sure you often find yourself drowning in a sea of open browser tabs, each representing a different task or topic you're working on, the best thing about Arc is that it allows users to create customizable “Spaces” to organize tabs and offers built-in note-taking and whiteboard tools for productivity."
 ---
 
-<meta name="twitter:image" content="/media/2.png"/> 
-<meta property="og:url" content="https://repository-images.githubusercontent.com/299482335/73b47831-7f71-40e1-8b61-40eaa4555bb0"/> 
+<meta name="twitter:image" content="/media/twitter.png"/> 
+<meta property="og:url" content="/media/twitter.png"/> 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Useful Mac Tools">
 <meta name="twitter:description" content="Im sure you often find yourself drowning in a sea of open browser tabs, each representing a different task or topic you're working on">

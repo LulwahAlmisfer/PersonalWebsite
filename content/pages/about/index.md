@@ -4,9 +4,10 @@ template: "page"
 ---
 
 <H3> Hello 👋🏼 </H3>
-I'm a Computer Science fresh graduate from Princess Nourah Bint Abdul Rahman University. </br>
-I am mostly interested in iOS Development but I also like to build the backend for my apps sometimes, currently learning server-side development.
 
+Currently, I’m interested in multiple fields 📚
 
-
-
+Backend (Spring and Micronaut) </br>
+iOS (mainly SwiftUI and some experience in UIKit)  </br>
+DevOps </br>
+Cloud/Infrastructure (AWS) </br>

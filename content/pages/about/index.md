@@ -5,9 +5,9 @@ template: "page"
 
 <H3> Hello 👋🏼 </H3>
 
-Currently, I’m interested in multiple fields 📚
+I’m currently interested in multiple fields 📚
 
-Backend (Spring and Micronaut) </br>
+Backend (Spring, Micronaut and Vapor) </br>
 iOS (SwiftUI and UIKit)  </br>
 DevOps </br>
 Cloud/Infrastructure (AWS) </br>

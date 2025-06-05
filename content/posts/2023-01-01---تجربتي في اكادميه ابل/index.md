@@ -17,7 +17,7 @@ description: "Im sure you often find yourself drowning in a sea of open browser 
 <meta name="twitter:description" content="Im sure you often find yourself drowning in a sea of open browser tabs, each representing a different task or topic you're working on">
 
 <figure>
-<img src="/media/2.png" alt="Trulli" width="500" height="333">
+<img src="/media/apps.png" alt="Trulli" width="500" height="333">
 </figure>
 
 Let's dive in and discover how these tools can transform the way you interact with your Mac, making tasks easier, more organized, and even a bit magical.
@@ -36,29 +36,42 @@ Im sure you often find yourself drowning in a sea of open browser tabs, each rep
 [Raycast](https://www.raycast.com) is an easy-to-use yet advanced app offering similar functionalities to Spotlight but with more customizations and features. 
 Here are some potential features: Spotlight-like Search,Clipboard History, Productivity Tools, Plugins.
 
-## Fig: Terminal Autocomplete 
+## Tower: an easy Git client
 
-<img src="https://repository-images.githubusercontent.com/299482335/73b47831-7f71-40e1-8b61-40eaa4555bb0" alt="Trulli" width="650" height="400">
+<img src="https://www.git-tower.com/assets/product-releases/mac/TO8M_compare-branches-preview.1748607045.jpg" alt="Tower" width="650" height="400">
 
-This is one of the best tools I discovered recently, [Fig](https://fig.io/)  is a terminal autocomplete tool, used to suggest and validate terminal commands. 
+Tower brings a clean, intuitive UI to Git.
+You can drag and drop branches, cherry-pick commits visually, and manage your repo without memorizing commands.
 
-## Oh My Zsh: Beautify Your Terminal
 
-<img src="https://ohmyz.sh/img/themes/omz-robbyrussell.png" alt="Trulli" width="650" height="400">
+## Wrap: fix any command without backspacing
 
-[Oh My Zsh](https://ohmyz.sh/) The terminal looks boring so lets say its a beauty tool + it will displays your current branch in a nice way.
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2J23Y5HrQA2SBjOfEPV_nBFTaarUMhFVcfg&s" alt="Wrap" width="650" height="400">
 
-## Orbstack: Container Management
+Warp is a terminal built for productivity.
+It offers a clean UI with input blocks, autocomplete, and the ability to share command outputs easily.
+What makes it stand out? AI integration powered by Claude — helping you debug errors, explain commands, and write shell scripts in natural language, right in the terminal.
 
-<img src="https://pbs.twimg.com/media/FvkttYRacAAq0F3?format=jpg&name=large" alt="Trulli" width="650" height="400">
 
-[Orbstack](https://orbstack.dev/) is a fast, light, and simple way to run containers and Linux machines on macOS. It's a supercharged alternative to Docker Desktop.
+## Todoist: quick & focused task capture
 
-## CleanMyMac X: Mac's Maintenance Expert
+<img src="https://i0.wp.com/www.omgubuntu.co.uk/wp-content/uploads/2020/09/todoist-linux-app.jpg?fit=840%2C480&ssl=1" alt="Trulli" width="650" height="400">
 
-<img src="https://cdn2-imgix.cleanmymac.com/images/content/en_1614275355.png?auto=format&fm=png&ixlib=php-3.3.1&q=60&w=520" alt="Trulli" width="650" height="400">
+Todoist is a fast and lightweight task manager that helps you capture and organize your todos.
+Great for daily planning, recurring tasks, and keeping things out of your head.
 
-[CleanMyMac X](https://cleanmymac.com/) is a comprehensive Mac optimization tool. With its intuitive interface, it offers features like cleaning up junk files, optimizing storage, uninstalling unwanted applications, and enhancing overall system performance. 
+## Notion: docs + planning in one place
+
+<img src="https://img.utdstc.com/screen/959/6b6/9596b64ca0cd133a5521489dad9ae2878b16ea4835885b2db1ef25b6c8102c25:600" alt="Notion" width="650" height="400">
+
+Notion is an all-in-one workspace where you can write, plan, and organize projects.
+Ideal for long-form thinking, documentation, and structured project management.
+
+TablePlus: database GUI
+<img src="https://tableplus.com/resources/images/dark-theme@2x.png" alt="TablePlus" width="650" height="400">
+
+TablePlus is a clean, fast, and powerful GUI for managing databases like PostgreSQL, MySQL, SQLite, and more.
+It makes querying, browsing data, and managing schema changes feel simple and intuitive.
 
 
  Thats it, Happy exploring! 🚀✨

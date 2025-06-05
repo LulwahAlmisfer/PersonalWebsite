@@ -2,21 +2,36 @@ import getDefaultColorMode from "./get-default-color-mode";
 
 describe("getDefaultColorMode", () => {
   test("successful return color mode", () => {
+    // Test without matchMedia (should return light)
     expect(getDefaultColorMode()).toBe("light");
 
-    (window.matchMedia as jest.Mock).mockReturnValue({
-      matches: true,
+    // Mock matchMedia to return matches: true for dark mode
+    Object.defineProperty(window, 'matchMedia', {
+      writable: true,
+      value: jest.fn().mockReturnValue({
+        matches: true,
+      }),
     });
 
     expect(getDefaultColorMode()).toBe("dark");
 
-    (window.matchMedia as jest.Mock).mockReturnValue({});
+    // Mock matchMedia to return matches: false for light mode
+    Object.defineProperty(window, 'matchMedia', {
+      writable: true,
+      value: jest.fn().mockReturnValue({
+        matches: false,
+      }),
+    });
     expect(getDefaultColorMode()).toBe("light");
   });
 
   test("successful return default color mode on ssr", () => {
-    (window.matchMedia as jest.Mock).mockReturnValue({
-      matches: true,
+    // Mock matchMedia to return matches: true
+    Object.defineProperty(window, 'matchMedia', {
+      writable: true,
+      value: jest.fn().mockReturnValue({
+        matches: true,
+      }),
     });
 
     const windowSpy: jest.SpyInstance = jest.spyOn(global, "window", "get");

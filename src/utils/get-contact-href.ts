@@ -8,6 +8,7 @@ const getContactHref = (name: string, contact: string) => {
     github: `https://github.com/${contact}`,
 
     twitter: `https://www.twitter.com/${contact}`,
+    telegram: `https://t.me/${contact}`,
 
     linkedin: `https://www.linkedin.com/in/${contact}`,
     youtube: `https://www.youtube.com/channel/${contact}`,

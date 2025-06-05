@@ -3,49 +3,33 @@
 @import "src/assets/scss/variables";
 
 .themeSwitcher {
-  --color: var(--color-theme-switcher);
-
   .button {
     align-items: center;
     background: transparent;
     border: 0;
+    border-radius: 50%;
+    color: var(--color-typographic-base-font);
     cursor: pointer;
     display: flex;
     justify-content: center;
     outline: 0;
+    padding: 8px;
+    transition: background-color 0.2s ease;
 
     svg {
+      fill: currentcolor;
       pointer-events: none;
-      stroke: var(--color);
-      transition: stroke 400ms;
+      transition: color 0.2s ease;
     }
 
     &:hover {
-      --color: var(--color-theme-switcher-hover);
+      background-color: var(--color-button-hover-bg, rgba(0, 0, 0, 0.1));
     }
   }
 
-  .moon {
-    opacity: 0;
-    stroke-dasharray: 0 1px;
-    transition: stroke-dasharray 200ms ease-in, opacity 400ms ease-in;
-  }
-
-  .sun {
-    opacity: 1;
-    stroke-dasharray: 1px 1px;
-    transition: stroke-dasharray 200ms ease-in, opacity 400ms ease-in;
-  }
-
-  &.dark {
-    .moon {
-      opacity: 1;
-      stroke-dasharray: 1px 1px;
-    }
-
-    .sun {
-      opacity: 0;
-      stroke-dasharray: 0 1px;
+  &.dark .button {
+    &:hover {
+      background-color: var(--color-button-hover-bg, rgba(255, 255, 255, 0.1));
     }
   }
 }

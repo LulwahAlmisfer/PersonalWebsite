@@ -7,7 +7,6 @@ template: "page"
 
 I’m currently interested in multiple fields 📚
 
-Backend (Spring, Micronaut and Vapor) </br>
+Backend (Spring and JakartaEE) </br>
 iOS (SwiftUI)  </br>
-DevOps </br>
-Cloud/Infrastructure (GCP) </br>
+Cloud/Infrastructure/DevOps (GCP) </br>

@@ -28,9 +28,7 @@ const onRenderBody = ({
               document.documentElement.className = newTheme;
             }
 
-            var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-            setTheme(cachedMode || (darkQuery.matches ? 'dark' : 'light'));
+            setTheme(cachedMode || 'light');
           }()
         `,
       },

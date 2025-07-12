@@ -55,12 +55,17 @@ export const Head: React.FC<Props> = ({ data }) => {
 
   const description = postDescription || subtitle;
   const image = socialImage?.publicURL && url.concat(socialImage?.publicURL);
+  const postUrl = url + data.markdownRemark.fields.slug;
 
   return (
     <Meta
       title={`${postTitle} - ${title}`}
       description={description}
       image={image}
+      url={postUrl}
+      type="article"
+      locale="ar_AR"
+      siteName={title}
     />
   );
 };

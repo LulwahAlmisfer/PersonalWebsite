@@ -10,11 +10,30 @@ tags:
 description: "كبداية تخيلو إن الكود يقدر يناظر نفسة، ويعرف وش الحقول اللي داخله، و يتصرف مع أي كائن بدون ما يعرف نوعه مسبقًا"
 ---
 
-<meta name="twitter:image" content="/media/2.png"/> 
-<meta property="og:url" content="/media/2.png"/> 
-<!-- <meta name="twitter:card" content="summary"> -->
-<meta name="twitter:title" content="Reflections">
-<meta name="twitter:description" content="Im sure you often find yourself drowning in a sea of open browser tabs, each representing a different task or topic you're working on">
+<!-- Open Graph  -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.lulwah.com/posts/Reflections" />
+<meta property="og:title" content="What is Reflection in Programming? And How Can We Benefit From It?" />
+<meta property="og:description" content="كبداية تخيلو إن الكود يقدر يناظر نفسة، ويعرف وش الحقول اللي داخله، و يتصرف مع أي كائن بدون ما يعرف نوعه مسبقًا" />
+<meta property="og:image" content="https://media.geeksforgeeks.org/wp-content/uploads/20220110121120/javalang.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Lulwah Almisfer" />
+<meta property="og:locale" content="ar_AR" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.lulwah.com/posts/Reflections" />
+<meta property="twitter:title" content="What is Reflection in Programming? And How Can We Benefit From It?" />
+<meta property="twitter:description" content="كبداية تخيلو إن الكود يقدر يناظر نفسة، ويعرف وش الحقول اللي داخله، و يتصرف مع أي كائن بدون ما يعرف نوعه مسبقًا" />
+<meta property="twitter:image" content="https://media.geeksforgeeks.org/wp-content/uploads/20220110121120/javalang.jpg" />
+
+<!-- Additional meta tags for better SEO and social sharing -->
+<meta name="author" content="Lulwah Almisfer" />
+<meta name="robots" content="index, follow" />
+<meta property="article:published_time" content="2025-07-18T23:46:37.121Z" />
+<meta property="article:section" content="Code" />
+<meta property="article:tag" content="Development" />
 
 <div dir="rtl" align="right">
 

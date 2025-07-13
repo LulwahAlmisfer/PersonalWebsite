@@ -25,6 +25,7 @@ exports[`Sidebar renders correctly 1`] = `
         <li>
           <a
             href="/"
+            onClick={[Function]}
           >
             Articles
           </a>

@@ -13,8 +13,11 @@ const Page: React.FC<Props> = ({ title, children }: Props) => {
   const pageRef = useRef<Nullable<HTMLDivElement>>(null);
 
   useEffect(() => {
-    if (pageRef.current) {
-      pageRef.current.scrollIntoView();
+    if (typeof window !== 'undefined' && window.location.pathname === '/' && sessionStorage.getItem('scrollToArticles') === '1') {
+      if (pageRef.current) {
+        pageRef.current.scrollIntoView();
+      }
+      sessionStorage.removeItem('scrollToArticles');
     }
   }, []);
 

@@ -20,6 +20,7 @@ const Menu: React.FC<Props> = ({ menu }: Props) => (
             to={item.path}
             className={styles.link}
             activeClassName={styles.active}
+            onClick={item.path === "/" ? () => sessionStorage.setItem('scrollToArticles', '1') : undefined}
           >
             {item.label}
           </Link>

@@ -8,8 +8,11 @@ category: "Code"
 tags:
   - "Development"
 description: "كبداية تخيلوا إن الكود يقدر يناظر نفسه، ويعرف وش الحقول اللي داخله، و يتصرف مع أي كائن بدون ما يعرف نوعه مسبقًا"
-socialImage: "./media/reflectionPoster.png"
+socialImage: "/media/reflectionPoster.png"
 ---
+
+<meta property="og:image" content="/media/reflectionPoster.png" />
+<meta name="twitter:image" content="/media/reflectionPoster.png" />
 
 
 <div dir="rtl" align="right">

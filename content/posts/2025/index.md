@@ -11,8 +11,10 @@ description: "كبداية تخيلوا إن الكود يقدر يناظر نف
 socialImage: "/media/reflectionPoster.png"
 ---
 
-<meta property="og:image" content="/media/reflectionPoster.png" />
+<meta property="og:image" content= "https://i.ibb.co/pjgMfy7Z/reflection-Poster.png" />
 <meta name="twitter:image" content="/media/reflectionPoster.png" />
+<meta property="og:title" content="What is Reflection in Programming? And How Can We Benefit From It?" />
+<meta name="twitter:title" content="What is Reflection in Programming? And How Can We Benefit From It?" />
 
 
 <div dir="rtl" align="right">

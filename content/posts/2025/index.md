@@ -8,7 +8,7 @@ category: "Code"
 tags:
   - "Development"
 description: "كبداية تخيلوا إن الكود يقدر يناظر نفسه، ويعرف وش الحقول اللي داخله، و يتصرف مع أي كائن بدون ما يعرف نوعه مسبقًا"
-socialImage: "https://i.ibb.co/pjgMfy7Z/reflection-Poster.png"
+
 ---
 
 <meta property="og:image" content= "https://i.ibb.co/pjgMfy7Z/reflection-Poster.png" />
@@ -33,7 +33,7 @@ socialImage: "https://i.ibb.co/pjgMfy7Z/reflection-Poster.png"
 
 الإنعكاس مفهوم يستخدم كثير، ولو مر عليكم إطار Spring Boot فأكيد جربتوا تكتبون Annotations، وتلاحظون انه يكتب كود عنكم بدون مانشوف، حرفيا الفكرة الي وراها كلها Reflection! 
 
-الانعكاس مفيد لما نبي تسوي أشياء ديناميكية بدون ما نكتب كود مخصص لكل حالة. خل نشوف أمثلة حقيقية في كل بيئة.
+الانعكاس مفيد لما نبي نسوي أشياء ديناميكية بدون ما نكتب كود مخصص لكل حالة. خل نشوف أمثلة حقيقية في كل بيئة.
 
 بعطيكم مثالين في هذي المقالة، واحد ب Swift والثاني ب Java، الهدف اننا بنجاوب سؤالين:  
 - وش الفكره؟  

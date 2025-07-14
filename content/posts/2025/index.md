@@ -8,6 +8,7 @@ category: "Code"
 tags:
   - "Development"
 description: "كبداية تخيلوا إن الكود يقدر يناظر نفسه، ويعرف وش الحقول اللي داخله، و يتصرف مع أي كائن بدون ما يعرف نوعه مسبقًا"
+socialImage: "./media/reflectionPoster.png"
 ---
 
 

@@ -4,7 +4,7 @@
 .content {
   @include margin-auto();
   max-width: $layout-post-single-width;
-  @include padding(0, 0.5);
+  @include padding(0, 1); // Increased horizontal padding
 
   .title {
     font-size: $typographic-base-font-size * 2;

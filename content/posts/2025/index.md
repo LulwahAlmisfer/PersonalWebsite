@@ -8,6 +8,7 @@ category: "Code"
 tags:
   - "Development"
 description: "كبداية تخيلوا إن الكود يقدر يناظر نفسه، ويعرف وش الحقول اللي داخله، و يتصرف مع أي كائن بدون ما يعرف نوعه مسبقًا"
+socialImage: "https://i.ibb.co/pjgMfy7Z/reflection-Poster.png"
 ---
 
 <meta property="og:image" content= "https://i.ibb.co/pjgMfy7Z/reflection-Poster.png" />
@@ -20,8 +21,6 @@ description: "كبداية تخيلوا إن الكود يقدر يناظر نف
 <meta property="og:title" content="What is Reflection in Programming? And How Can We Benefit From It?" />
 <meta property="og:description" content="كبداية تخيلو إن الكود يقدر يناظر نفسة، ويعرف وش الحقول اللي داخله، و يتصرف مع أي كائن بدون ما يعرف نوعه مسبقًا" />
 <meta property="og:image" content="https://i.ibb.co/pjgMfy7Z/reflection-Poster.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
 <meta property="og:site_name" content="Lulwah Almisfer" />
 <meta property="og:locale" content="ar_AR" />
 

@@ -5,7 +5,7 @@ template: "post"
 draft: false
 slug: "/posts/soon"
 category: "DevOps"
-description: "Recently, I had a really smooth experience working with CI/CD — it made deploying my apps so much easier! I set it up first with a Spring project on GCP(cloud run): building the app, pushing it to the container registry, and running it, all automatically. Watching the whole process happen without manual steps was honestly very satisfying!"
+description: "Recently, I had a really smooth experience working with CI/CD, it made deploying my apps so much easier! I set it up first with a Spring project on GCP(cloud run): building the app, pushing it to the container registry, and running it, all automatically. Watching the whole process happen without manual steps was honestly very satisfying!"
 socialImage: "./media/square.jpg"
 ---
 

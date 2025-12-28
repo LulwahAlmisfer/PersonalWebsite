@@ -13,12 +13,14 @@ description: "بهالمقالة بتكلم عن طريقة مبسطة للتع�
 ---
 
 <meta property="og:image" content="https://math.univ-lyon1.fr/~alachal/diaporamas/diaporama_cartographie3/GIS_Geography_fichiers/Null-Island-Feature.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://math.univ-lyon1.fr/~alachal/diaporamas/diaporama_cartographie3/GIS_Geography_fichiers/Null-Island-Feature.jpg" />
+<meta name="twitter:title" content="what is PostGIS and CoreLocation?" />
+<meta name="twitter:description" content="بهالمقالة بتكلم عن طريقة مبسطة للتعامل مع المواقع والمساحات الجغرافية، وكيف نحدد الموقع المستخدم ونقارنه بمناطق معيّنة، باستخدام CoreLocation في iOS و PostGIS في الباكيند." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.lulwah.com/posts/PostGIS and CoreLocation" />
 <meta property="og:title" content="what is PostGIS and CoreLocation?" />
 <meta property="og:description" content="بهالمقالة بتكلم عن طريقة مبسطة للتعامل مع المواقع والمساحات الجغرافية، وكيف نحدد الموقع المستخدم ونقارنه بمناطق معيّنة، باستخدام CoreLocation في iOS و PostGIS في الباكيند." />
-<meta property="og:site_name" content="Lulwah Almisfer" />
 <meta property="og:locale" content="ar_AR" />
 
 <div dir="rtl" align="right">
